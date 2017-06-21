@@ -16,7 +16,7 @@ def main():
     #creates database
     db = MySQLdb.connect(host="localhost",    # your host, usually localhost
                          user="root",         # your username
-                         passwd="",  # your password
+                         passwd="your_new_password",  # your password
                          db="dyspense")       #CHANGE THESE
     #cursor for database
     cur = db.cursor()
