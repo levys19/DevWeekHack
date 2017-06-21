@@ -16,7 +16,7 @@ function addToDb() {
 
   $serverName = 'localhost';
   $dbUserName = 'root';
-  $dbUserPass = '275229946s';
+  $dbUserPass = '';
   $dbName = 'dyspense';
   $confirmed = 0;
 
