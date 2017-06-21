@@ -1,0 +1,158 @@
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+
+<body>
+<style>
+    .big-btn {
+        width: 250px;
+        height: 40px;
+    }
+    .floatleft {width: 50%; float: left;}
+    .floatright {width:50%; float: right;}
+    .container { overflow: hidden; }
+    a {
+        text-decoration:none;
+        font-family:Arial;
+        display: block;
+    }
+    #contactInfo, #dobInfo {
+        margin-top: 3px;
+        color: blue;
+        display: none;
+    }
+</style>
+    <div style="text-align: right;">
+        <button style="background-color:#0ca3d2" class="btn btn-block btn-primary" style="height:30px; width:100px">
+            <a href="index.html" style="text-decoration: none"><font size= "3" face="Arial" color="white" > Log Off </font></a></button><br />
+    </div>
+    <center><img src="dyspenserpic.png"></center>
+    <p>
+    <div style="text-align: right; margin-right: 50px;">
+        <input type="text" name="search" placeholder="Search Patient"/>
+        <input type="submit" value= "Search Here"/>
+    </div>
+    </p>
+    <p>
+        <center><button class="btn btn-block big-btn"><a href="dyspenser_home.html"style="text-decoration: none"><font size="+2">Home</font></a>
+            </button>
+            <button class="btn btn-block big-btn">
+                <a href="dyspenser_patients.html" style="text-decoration: none"><font size="+2">Patients</font></a></button></center>   </p>
+
+    <div class="container floatLeft">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Need Refills</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <ul style="list-style: none;">
+                            <li><a href="dyspenser_profile2.html"style="text-decoration: none">Peter Parker</a></li>
+                            <li><a href="dyspenser_profile4.html"style="text-decoration: none">Barry Allen</a></li>
+                            <li><a href="#"style="text-decoration: none">Rachel Thompson</a></li>
+                            <li><a href="#"style="text-decoration: none">Edison Long</a></li>
+                            <li><a href="#"style="text-decoration: none">View More...</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+     <div class="container floatRight">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Recent Patients</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <ul style="list-style: none;">
+                            <li><a href="dyspenser_profile1.html"style="text-decoration: none">John Doe</a></li>
+                            <li><a href="dyspenser_profile3.html"style="text-decoration: none">Thor</a></li>
+                            <li><a href="dyspenser_profile.html"style="text-decoration: none">Mark Zackerberg</a></li>
+                            <li><a href="#"style="text-decoration: none">Michelle Wayne</a></li>
+                            <li><a href="#"style="text-decoration: none">View More...</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container">
+      <h2>New Patient Registration</h2>
+      <form class="well" id="submitApp">
+        <div class="form-group">
+          <label class="control-label" for="personName" value="John Doe">Name:</label>
+          <input class="form-control" id="personName" name="personName">
+        </div>
+
+        <div class="form-group">
+          <label class="control-label" for="dob">Date of Birth:</label>
+          <input class="form-control" id="dob" name="dob">
+          <p id="dobInfo">Date of birth should be in the format of YYYY-MM-DD</p>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label" for="prescription">Prescription Name:</label>
+          <input class="form-control" id="prescription" name="prescription">
+        </div>
+
+        <div class="form-group">
+          <label for="dose" class="col-form-label">Dose (mg)</label>
+          <input class="form-control" type="number" value="42" id="dose">
+        </div>
+
+        <div class="form-group">
+          <label for="sel1">Dose Day:</label>
+          <select class="form-control" id="doseDays">
+            <option selected disabled hidden></option>
+            <option>Sunday</option>
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+            <option>Saturday</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label" for="doseTime">Dose Time:</label>
+          <input class="form-control" id="doseTime" name="doseTime">
+        </div>
+
+        <div class="form-group">
+          <label class="control-label" for="contact">Contact Telephone:</label>
+          <input class="form-control" id="contact" name="contact">
+          <p id="contactInfo">Phone numbers should be in the format of +1XXXXXXXXXX (US), each separated by a space.</p>
+        </div>
+
+        <p><strong>Notification Method:</strong></p>
+        <label class="checkbox-inline"><input type="checkbox" id="voiceCheck">Voice Call</label>
+        <label class="checkbox-inline"><input type="checkbox" id="smsCheck">SMS Text</label>
+        <label class="checkbox-inline"><input type="checkbox" id="bothCheck">Both</label><br><br>
+
+        <div class="form-group">
+          <button type="submit" class="btn btn-default">Submit</button>
+          <br><br><p style="color: green; display: none;" id="successMessage">Successfully added new patient!</p>
+
+        </div>
+      </form>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="index.js"></script>
+</html>

@@ -1,0 +1,127 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+
+<body>
+<style>
+    .big-btn {
+        width: 250px;
+        height: 40px;
+    }
+    .container { overflow: hidden; }
+    a {
+        text-decoration:none;
+        font-family:Arial;
+        display: block;
+    }
+    li {
+      list-style-type: none;
+    }
+    #doseDaysInfo, #contactInfo {
+        margin-top: 3px;
+        color: blue;
+        display: none;
+    }
+</style>
+
+    <div style="text-align: right;">
+        <button style="background-color:#0ca3d2" class="btn btn-block btn-primary" style="height:30px; width:100px">
+            <a href="index.html" style="text-decoration: none"><font size= "3" face="Arial" color="white" > Log Off </font></a></button><br />
+    </div>
+    <center><img src="dyspenserpic.png"></center>
+    <p>
+    <div style="text-align: right; margin-right: 50px;">
+        <input type="text" name="search" placeholder="Search Patient"/>
+        <input type="submit" value= "Search Here"/>
+    </div>
+    </p>
+    <p>
+        <center><button class="btn btn-block big-btn"><a href="dyspenser_home.html"style="text-decoration: none"><font size="+2">Home</font></a>
+            </button>
+            <button class="btn btn-block big-btn">
+                <a href="dyspenser_patients.html" style="text-decoration: none"><font size="+2">Patients</font></a></button></center>   </p>
+    <p>
+    <div class="container">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th><center>All Patients</center></th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <tr>
+                    <td>
+                        <div style="float:left;">
+                            <a href="dyspenser_profile.html"><img class="selfie" src="mark.jpeg" height="60px" width="50px" class="icon">&nbsp;&nbsp;</a>
+                        </div>
+                       <p style="float:right;">
+                            <ul>
+                                <li>   Name: <a href="dyspenser_profile.html"><b>Mark Zuckerberg</b></a></li>
+                                <li>   Date of Birth: <b>1984-05-14</b></li>
+                            </ul>
+                        </p>
+                    </td>
+                </tr>
+    <tr>
+                    <td>
+                        <div style="float:left;">
+                            <a href="dyspenser_profile.html"><img class="selfie" src="john.png" height="60px" width="50px" class="icon">&nbsp;&nbsp;</a>
+                        </div>
+                       <p style="float:right;">
+                            <ul>
+                                <li>   Name: <a href="dyspenser_profile1.html"><b>John Doe</b></a></li>
+                                <li>   Date of Birth: <b>1989-02-08</b></li>
+                            </ul>
+                        </p>
+                    </td>
+                </tr>
+<tr>
+                    <td>
+                        <div style="float:left;">
+                            <a href="dyspenser_profile.html"><img class="selfie" src="PeterParker.jpg" height="60px" width="50px" class="icon">&nbsp;&nbsp;</a>
+                        </div>
+                       <p style="float:right;">
+                            <ul>
+                                <li>   Name: <a href="dyspenser_profile2.html"><b>Peter Parker</b></a></li>
+                                <li>   Date of Birth: <b>1984-05-14</b></li>
+                            </ul>
+                        </p>
+                    </td>
+                </tr>
+<tr>
+                    <td>
+                        <div style="float:left;">
+                            <a href="dyspenser_profile.html"><img class="selfie" src="thor.jpg" height="60px" width="50px" class="icon">&nbsp;&nbsp;</a>
+                        </div>
+                       <p style="float:right;">
+                            <ul>
+                                <li>   Name: <a href="dyspenser_profile3.html"><b>Thor</b></a></li>
+                                <li>   Date of Birth: <b>1960-09-02</b></li>
+                            </ul>
+                        </p>
+                    </td>
+                </tr>
+<tr>
+                    <td>
+                        <div style="float:left;">
+                            <a href="dyspenser_profile.html"><img class="selfie" src="flash.jpg" height="60px" width="50px" class="icon">&nbsp;&nbsp;</a>
+                        </div>
+                       <p style="float:right;">
+                            <ul>
+                                <li>   Name: <a href="dyspenser_profile4.html"><b>Barry Allen</b></a></li>
+                                <li>   Date of Birth: <b>1977-06-21</b></li>
+                            </ul>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="dyspenser_patients.js"></script>
+</html>

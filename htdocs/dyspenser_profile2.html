@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="add.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+
+<body>
+<style>
+    .big-btn {
+        width: 250px;
+        height: 40px;
+    }
+    .floatleft {width: 50%; float: left;}
+    .floatright {width:50%; float: right;}
+    .container { overflow: hidden; }
+    a {
+        text-decoration:none;
+        font-family:Arial;
+        display: block;
+    }
+    .infoHolder {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .infoBox {
+      margin: 10px;
+      text-align: center;
+      width: 150px;
+    }
+    #doseDaysInfo, #contactInfo {
+        margin-top: 3px;
+        color: blue;
+        display: none;
+    }
+</style>
+
+    <div style="text-align: right;">
+        <button style="background-color:#0ca3d2" class="btn btn-block btn-primary" style="height:30px; width:100px">
+            <a href="index.html" style="text-decoration: none"><font size= "3" face="Arial" color="white" > Log Off </font></a></button><br />
+    </div>
+    <center><img src="dyspenserpic.png"></center>
+    <p>
+    <div style="text-align: right; margin-right: 50px;">
+        <input type="text" name="search" placeholder="Search Patient"/>
+        <input type="submit" value= "Search Here"/>
+    </div>
+    </p>
+    <p>
+        <center><button class="btn btn-block big-btn"><a href="dyspenser_home.html"style="text-decoration: none"><font size="+2">Home</font></a>
+            </button>
+            <button class="btn btn-block big-btn">
+                <a href="dyspenser_patients.html" style="text-decoration: none"><font size="+2">Patients</font></a></button></center>   </p>
+    <div id="Profile Information">
+        <div class="containName">
+        </div>
+
+        <p><center><img class="selfie" src="PeterParker.jpg" height="400px" width="320px"></center></p>
+    <!-- <div class="Infomation">
+        <center>
+            <h1><u>About Patient</u></h1>
+            <table style = "width:0%">
+                <tr><td>Name: <b>Peter Parker</b></td></tr>
+                <tr><td>Date of Birth: <b>March 16, 1970</b></td></tr>
+                <tr><td>Medical History: <b>Classified</b></td></tr>
+                <tr><td>Medication Needed Currently: <b>Classified</b></tr>
+            </table></center></div> -->
+
+            <center><h1><u>About Patient</u></h1></center>
+            <div class="infoHolder">
+              <div class="infoBox">Name:<br>Date of Birth:<br>Medical History:<br>Current Medications<br>Dose Day<br>Dose Time</div>
+              <div class="infoBox"><b>Peter Parker<br>March 16, 1970<br>Green Pill<br>Black Pill<br>Thursday<br>9:30</b></div>
+            </div>
+
+        <!-- <center><div class="Contact">
+            <h1><u>Contact Information</u></h1>
+            <table style = "width:0%">
+                <tr><td>Cell Phone Number: <b>Classified</b></td></tr>
+                <tr><td>Email: <b>Classified</b></td></tr>
+                <tr><td>Emergency Contact:<b>Classified</b></td></tr>
+            </table></div></center> -->
+
+            <center><h1><u>Contact Information</u></h1></center>
+            <div class="infoHolder">
+              <div class="infoBox">Cell Phone Number:<br>Email:<br>Emergency Contact:</div>
+              <div class="infoBox"><b>+19168349384<br>Classified<br>Classified</b></div>
+            </div>
+
+        <center><div class"Dosage">
+            <h1><u>Change Dosage</u></h1>
+                 <div class="container">
+                   <form class="well" style="width: 50%">
+                         <div class="form-group">
+                             <label class="control-label" for="prescription">Prescription:</label>
+                             <input class="form-control" id="prescription" name="prescription">
+                         </div>
+
+                         <div class="form-group">
+                             <label class="control-label" for="dose">Dose (mg):</label>
+                             <input class="form-control" id="dose" name="dose">
+                         </div>
+
+                         <div class="form-group">
+                             <label class="control-label" for="doseDays">Dose Days:</label>
+                             <input class="form-control" id="doseDays" name="doseDays">
+                             <p id="doseDaysInfo">Be sure to separate each weekday with a space</p>
+                         </div>
+
+                         <div class="form-group">
+                             <label class="control-label" for="doseTime">Dose Time:</label>
+                             <input class="form-control" id="doseTime" name="doseTime">
+                         </div>
+                         <div class="form-group">
+                             <button type="submit" class="btn btn-default">Submit</button>
+                         </div>
+                     </form>
+            </div>
+            </div></center>
+
+    </div>
+    </body>
+
+</html>
