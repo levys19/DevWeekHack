@@ -20,8 +20,8 @@ class notify:
 	#this is supposed to be a constructor and will set up important variables
 	def __init__(self):
 		#these will have to be changed for different accounts
-		self.sid = 'AC228890845030a255d42643ff8f7bd507'
-		self.authToken = 'c8c671c58e454e2ca642851420136f95'
+		self.sid = ''
+		self.authToken = ''
 
 		self.url = 'http://api.zang.io/v2'
 		self.configuration = Configuration(self.sid, self.authToken, url=self.url)
@@ -50,8 +50,8 @@ class notify:
 			call = self.callsConnector.makeCall(to=number,
 				from_=self.no,
 
-				#This is the XML file that I'm using as a default
-				url='http://cloud.zang.io/data/inboundxml/7bb4bd2cc1c2d5a03be3c46f4fda2b48e38e5117',
+				#This is the XML file that determines what the bot says
+				url='',
 				method=HttpMethod.GET,
 
 				#This is what the bot will say if it can't find the url for any reason
